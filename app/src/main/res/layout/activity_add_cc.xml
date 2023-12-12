@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCC"
+    android:background="@drawable/bra">
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/black_border">
+
+        <TextView
+            android:id="@+id/lchamcong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="Chấm Công Nhân Viên"
+            android:textSize="35dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtcmnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_thongtin"
+            android:drawableLeft="@drawable/baseline_credit_card_24"
+            android:drawablePadding="4dp"
+            android:ems="15"
+            android:hint="CMND"
+            android:inputType="text"
+            android:padding="14dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txttennv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_thongtin"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="4dp"
+            android:ems="15"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtngaycham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_thongtin"
+            android:drawableLeft="@drawable/baseline_calendar_month_24"
+            android:drawablePadding="4dp"
+            android:ems="15"
+            android:hint="Ngày Chấm Công"
+            android:inputType="date"
+            android:padding="14dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtsongay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_thongtin"
+            android:drawableLeft="@drawable/baseline_edit_calendar_24"
+            android:drawablePadding="4dp"
+            android:ems="15"
+            android:hint="Số Ngày Công"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textSize="20dp" />
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/txtsongay"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnluu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lưu"
+                android:background="@drawable/custom_buttom"
+                app:backgroundTint="@null"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
